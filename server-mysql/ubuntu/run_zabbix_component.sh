@@ -36,6 +36,8 @@ ZABBIX_ETC_DIR="/etc/zabbix"
 # Web interface www-root directory
 ZBX_FRONTEND_PATH="/usr/share/zabbix"
 
+ZBX_STARTPINGERS=80
+
 prepare_system() {
     local type=$1
     local web_server=$2
