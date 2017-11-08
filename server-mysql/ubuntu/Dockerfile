@@ -46,6 +46,9 @@ RUN locale-gen $LC_ALL && \
             libevent-2.0 \
             libpcre3 \
             fping \
+            wget \
+            vim \
+            pip \
             libopenipmi0 1>/dev/null && \
     apt-get ${APT_FLAGS_COMMON} autoremove && \
     apt-get ${APT_FLAGS_COMMON} clean && \
