@@ -48,7 +48,7 @@ RUN locale-gen $LC_ALL && \
             fping \
             wget \
             vim \
-            pip \
+            python-pip \
             libopenipmi0 1>/dev/null && \
     apt-get ${APT_FLAGS_COMMON} autoremove && \
     apt-get ${APT_FLAGS_COMMON} clean && \
