@@ -147,6 +147,8 @@ VOLUME ["/var/lib/zabbix/ssl/certs", "/var/lib/zabbix/ssl/keys", "/var/lib/zabbi
 
 ADD conf/etc/supervisor/ /etc/supervisor/
 ADD run_zabbix_component.sh /
+ADD wechat.py /usr/lib/zabbix/alertscripts/
+RUN chmod +x /usr/lib/zabbix/alertscripts/wechat.py
 
 ENTRYPOINT ["/bin/bash"]
 
